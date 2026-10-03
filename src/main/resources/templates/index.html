@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <title>Home</title>
+</head>
+<body>
+<div layout:fragment="content">
+
+    <!-- Bootstrap component 2: Alert -->
+    <div class="alert alert-success" role="alert" th:text="${message}">
+        Welcome!
+    </div>
+
+    <!-- Bootstrap component 3: Card -->
+    <div class="card" style="max-width: 28rem;">
+        <div class="card-body">
+            <h5 class="card-title">Thymeleaf Layout</h5>
+            <p class="card-text">
+                This page uses a shared layout template for the navbar and footer,
+                and only fills in its own content section.
+            </p>
+            <a href="https://www.thymeleaf.org" class="btn btn-primary">Learn more</a>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
